@@ -1,0 +1,8 @@
+timezone: America/Los_Angeles
+port: 3000
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "blog"
