@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }} | Ido - an artificial auxiliary language to bring the world together</title>
+  {% include default_head.html %}
+  <link rel="stylesheet" href="/css/landing.css">
+  <script src="/js/landing.js"></script>
+</head>
+<body>
+  <nav class="navbar-default navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">
+          <!-- 20px by 20px is what the example used -->
+          <img src="http://placehold.it/20x20&text=ido">
+        </a>
+        <button class="navbar-toggle collapsed">
+        </button>
+        <a class="navbar-brand" href="/">Ido</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Lessons</a></li>
+          <li><a href="#">Dictionary</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  {{ content }}
+</body>
+</html>
