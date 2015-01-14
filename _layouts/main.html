@@ -7,7 +7,6 @@
   <script src="/js/landing.js"></script>
 </head>
 <body>
-  <div id="json" data-json='{{ site | jsonify }}'></div>
   <nav class="navbar-default navbar">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -30,5 +29,6 @@
     </div>
   </nav>
   {{ content }}
+  <pre><code><samp id='json'>{{ site | jsonify | xml_escape }}</samp></code></pre>
 </body>
 </html>
