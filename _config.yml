@@ -6,5 +6,4 @@ defaults:
       type: "posts"
     values:
       layout: "blog"
-source: ./jekyll
 permalink: /:year-:month-:day/:title
