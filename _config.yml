@@ -6,4 +6,5 @@ defaults:
       type: "posts"
     values:
       layout: "blog"
-permalink: /:year-:month-:day/:title
+permalink: /blog/:year-:month-:day/:title
+paginate_path: /blog/page-:num
