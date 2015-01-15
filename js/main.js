@@ -4,8 +4,16 @@ $(function () {
 
 function markdown () {
     $('md').each(function (index, element) {
+        var text;
         element = $(element);
-        element.html(marked(limitSpacing(element.html())));
+        text = limitSpacing(element.html());
+
+        if (element.data('escape') !== false) {
+            text = _.escape(text);
+        }
+
+        element.html(marked(text));
+
         if (element.data('keep-id') === undefined) {
             element.children().each(function (ind, ele) {
                 ele = $(ele);
