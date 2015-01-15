@@ -6,7 +6,7 @@ function markdown () {
     $('md').each(function (index, element) {
         element = $(element);
         element.html(marked(limitSpacing(element.html())));
-        if (element.data('id') === undefined) {
+        if (element.data('keep-id') === undefined) {
             element.children().each(function (ind, ele) {
                 ele = $(ele);
                 ele.removeAttr('id');

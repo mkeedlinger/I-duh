@@ -3,6 +3,9 @@
 <head>
   <title>{{ page.title }} | Ido - an artificial auxiliary language to bring the world together</title>
   {% include default_head.html %}
+  {% for code in page.more_includes %}
+    {{ code }}
+  {% endfor %}
 </head>
 <body>
   <nav class="navbar-default navbar">
@@ -18,14 +21,16 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#">About</a></li>
+          <li><a href="/about.html">About</a></li>
           <li><a href="#">Lessons</a></li>
           <li><a href="#">Dictionary</a></li>
-          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/blog">Blog</a></li>
         </ul>
       </div>
     </div>
   </nav>
   {{ content }}
+  {% include footer.html %}
 </body>
 </html>

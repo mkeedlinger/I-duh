@@ -1,0 +1,19 @@
+---
+layout: main
+title: Blog
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1 class="text-center">Blog posts</h1>
+      <br>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.date | date_to_string }} | {{ post.title }} - {{ post.content | strip_html | strip_newlines | truncatewords: 15 }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

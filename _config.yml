@@ -5,7 +5,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "blog"
+      layout: "posts"
 permalink: /blog/:year-:month-:day/:title
 paginate_path: /blog/page-:num
 gems:
