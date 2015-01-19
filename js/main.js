@@ -19,7 +19,7 @@ function markdown () {
                 ele = $(ele);
                 ele.removeAttr('id');
             });
-        };
+        }
     });
 }
 
