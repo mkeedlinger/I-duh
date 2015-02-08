@@ -1,11 +1,8 @@
 ---
 ---
-#footer {
-    background-color: #333;
-    h1, h2, h3, h4, h5, p {
-        color: #eee
-    }
-    a {
-        color: #ddd;
-    }
+.row {
+    max-width: 70rem;
+}
+.row.padded {
+    padding-top: 3rem;
 }
